@@ -5,83 +5,193 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mama Daina | Traditional Healer</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    padding:0;
-    font-family: Arial, sans-serif;
-    background:#000;
-    color:#fff;
+font-family:'Poppins',sans-serif;
+background:#050505;
+color:white;
+line-height:1.6;
 }
 
 header{
-    background:linear-gradient(to right,#111,#222);
-    padding:60px 20px;
-    text-align:center;
+height:100vh;
+background:url('https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1600&auto=format&fit=crop') center/cover;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
 }
 
-header h1{
-    font-size:60px;
-    color:gold;
-    margin:0;
+header::before{
+content:'';
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.75);
 }
 
-header p{
-    font-size:22px;
-    margin-top:10px;
+.hero{
+position:relative;
+z-index:2;
+padding:20px;
+}
+
+.hero h1{
+font-size:70px;
+color:#d4af37;
+text-transform:capitalize;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:25px;
+margin-bottom:25px;
 }
 
 .btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:15px 30px;
-    background:gold;
-    color:#000;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:5px;
+display:inline-block;
+padding:15px 35px;
+background:#d4af37;
+color:black;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
 }
 
 section{
-    padding:60px 20px;
-    text-align:center;
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+color:#d4af37;
+margin-bottom:50px;
+text-transform:capitalize;
+}
+
+.about{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.about-text p{
+font-size:18px;
+color:#ddd;
 }
 
 .services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    margin-top:40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
 .card{
-    background:#111;
-    padding:30px;
-    border:1px solid gold;
-    border-radius:10px;
+background:#111;
+padding:30px;
+border-radius:20px;
+text-align:center;
+border:1px solid #d4af37;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:15px;
+margin-bottom:20px;
 }
 
 .card h3{
-    color:gold;
+color:#d4af37;
+margin-bottom:15px;
+font-size:25px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:20px;
+}
+
+.contact{
+text-align:center;
+background:#111;
+border-radius:20px;
+padding:60px 20px;
+}
+
+.contact h2{
+font-size:45px;
+color:#d4af37;
+margin-bottom:20px;
+}
+
+.contact p{
+font-size:22px;
+margin-bottom:20px;
 }
 
 footer{
-    background:#111;
-    padding:30px;
-    text-align:center;
-    color:#aaa;
+text-align:center;
+padding:30px;
+background:black;
+color:#999;
 }
 
 .whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:white;
-    padding:15px 20px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:16px 24px;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+z-index:1000;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:45px;
+}
+
+.hero p{
+font-size:20px;
+}
 }
 </style>
 </head>
@@ -89,65 +199,91 @@ footer{
 <body>
 
 <header>
-    <h1>mama daina</h1>
-    <p>a sangoma / traditional healer</p>
-    <a class="btn" href="https://wa.me/27797862372">
-        whatsapp now
-    </a>
+<div class="hero">
+<h1>mama daina</h1>
+<p>a sangoma / traditional healer</p>
+<a href="https://wa.me/27797862372" class="btn">whatsapp now</a>
+</div>
 </header>
 
 <section>
-    <h2 style="color:gold;">about mama daina</h2>
-    <p>
-        mama daina is a trusted traditional healer and sangoma
-        helping people with spiritual guidance, love problems,
-        protection, luck, cleansing and healing.
-    </p>
+<h2 class="section-title">about mama daina</h2>
+
+<div class="about">
+<img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop">
+
+<div class="about-text">
+<p>
+Mama Daina is a trusted traditional healer and sangoma helping people worldwide with spiritual guidance, protection, cleansing, relationship healing, financial blessings and powerful traditional healing solutions.
+</p>
+
+<br>
+
+<p>
+Available worldwide through WhatsApp consultations and spiritual guidance.
+</p>
+</div>
+</div>
 </section>
 
 <section>
-    <h2 style="color:gold;">services</h2>
+<h2 class="section-title">our services</h2>
 
-    <div class="services">
+<div class="services">
 
-        <div class="card">
-            <h3>love spells</h3>
-            <p>bring back lost love and restore relationships.</p>
-        </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?q=80&w=1200&auto=format&fit=crop">
+<h3>love spells</h3>
+<p>bring back lost love and restore relationships.</p>
+</div>
 
-        <div class="card">
-            <h3>financial blessings</h3>
-            <p>remove bad luck and attract success.</p>
-        </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop">
+<h3>financial blessings</h3>
+<p>remove bad luck and attract wealth and success.</p>
+</div>
 
-        <div class="card">
-            <h3>spiritual healing</h3>
-            <p>cleansing, protection and spiritual guidance.</p>
-        </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop">
+<h3>spiritual healing</h3>
+<p>traditional cleansing and spiritual guidance.</p>
+</div>
 
-        <div class="card">
-            <h3>protection spells</h3>
-            <p>protect yourself and your family from negativity.</p>
-        </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?q=80&w=1200&auto=format&fit=crop">
+<h3>protection spells</h3>
+<p>protect yourself and your family from negativity.</p>
+</div>
 
-    </div>
+</div>
 </section>
 
 <section>
-    <h2 style="color:gold;">contact</h2>
+<h2 class="section-title">gallery</h2>
 
-    <p>phone / whatsapp:</p>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?q=80&w=1200&auto=format&fit=crop">
+<img src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?q=80&w=1200&auto=format&fit=crop">
+</div>
+</section>
 
-    <h1 style="color:gold;">+27 79 786 2372</h1>
-
+<section>
+<div class="contact">
+<h2>contact mama daina</h2>
+<p>available worldwide</p>
+<p><strong>whatsapp:</strong> +27 79 786 2372</p>
+<a href="https://wa.me/27797862372" class="btn">chat on whatsapp</a>
+</div>
 </section>
 
 <footer>
-    © 2026 mama daina | all rights reserved
+© 2026 mama daina traditional healer. all rights reserved.
 </footer>
 
-<a class="whatsapp" href="https://wa.me/27797862372">
-    chat on whatsapp
+<a href="https://wa.me/27797862372" class="whatsapp">
+WhatsApp
 </a>
 
 </body>
