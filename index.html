@@ -11,6 +11,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
@@ -35,17 +36,20 @@ z-index:1000;
 color:red;
 font-size:30px;
 font-weight:bold;
+text-transform:capitalize;
 }
 
 .menu{
 display:flex;
 gap:30px;
+flex-wrap:wrap;
 }
 
 .menu a{
 color:#ffcc66;
 text-decoration:none;
 font-size:22px;
+text-transform:capitalize;
 }
 
 .menu a:hover{
@@ -54,13 +58,15 @@ color:red;
 
 .hero{
 text-align:center;
-padding:50px 20px;
+padding:80px 20px;
+background:#050505;
 }
 
 .hero h1{
 font-size:65px;
 color:red;
 margin-bottom:20px;
+text-transform:uppercase;
 }
 
 .hero p{
@@ -86,6 +92,7 @@ height:fit-content;
 color:red;
 font-size:40px;
 margin-bottom:20px;
+text-transform:uppercase;
 }
 
 .sidebar ul{
@@ -100,6 +107,7 @@ margin-bottom:15px;
 color:white;
 text-decoration:none;
 font-size:22px;
+text-transform:capitalize;
 }
 
 .sidebar ul li a:hover{
@@ -116,6 +124,7 @@ border:1px solid #444;
 color:red;
 font-size:45px;
 margin-bottom:20px;
+text-transform:uppercase;
 }
 
 .content p{
@@ -142,6 +151,7 @@ border:1px solid red;
 color:#ffcc66;
 font-size:30px;
 margin-bottom:15px;
+text-transform:capitalize;
 }
 
 .card p{
@@ -160,10 +170,33 @@ border:1px solid red;
 color:red;
 font-size:50px;
 margin-bottom:20px;
+text-transform:uppercase;
 }
 
 .contact p{
 font-size:25px;
+}
+
+.blogs{
+margin-top:40px;
+}
+
+.blog{
+background:#111;
+padding:25px;
+margin-bottom:25px;
+border:1px solid #444;
+}
+
+.blog h3{
+color:#ffcc66;
+font-size:30px;
+margin-bottom:15px;
+}
+
+.blog p{
+font-size:20px;
+color:#ddd;
 }
 
 .whatsapp{
@@ -177,6 +210,7 @@ border-radius:50px;
 text-decoration:none;
 font-size:22px;
 font-weight:bold;
+z-index:1000;
 }
 
 footer{
@@ -197,7 +231,6 @@ grid-template-columns:1fr;
 
 .menu{
 gap:15px;
-flex-wrap:wrap;
 }
 
 .hero h1{
@@ -206,6 +239,10 @@ font-size:40px;
 
 .sidebar h2{
 font-size:30px;
+}
+
+.content h2{
+font-size:35px;
 }
 
 }
@@ -222,17 +259,17 @@ mama daina
 </div>
 
 <div class="menu">
-<a href="#">home</a>
-<a href="#">about</a>
-<a href="#">love spells</a>
-<a href="#">psychic readings</a>
-<a href="#">blogs</a>
-<a href="#">contact</a>
+<a href="#home">home</a>
+<a href="#about">about</a>
+<a href="#love">love spells</a>
+<a href="#psychic">psychic readings</a>
+<a href="#blogs">blogs</a>
+<a href="#contact">contact</a>
 </div>
 
 </div>
 
-<div class="hero">
+<div class="hero" id="home">
 
 <h1>lost love spells caster in usa</h1>
 
@@ -249,31 +286,37 @@ trusted sangoma and traditional healer helping people worldwide
 <h2>spells</h2>
 
 <ul>
-<li><a href="#">bring back lost lover</a></li>
-<li><a href="#">love spells</a></li>
-<li><a href="#">money spells</a></li>
-<li><a href="#">marriage spells</a></li>
-<li><a href="#">protection spells</a></li>
-<li><a href="#">spiritual healing</a></li>
-<li><a href="#">remove bad luck</a></li>
-<li><a href="#">business success</a></li>
-<li><a href="#">lottery luck</a></li>
-<li><a href="#">court case help</a></li>
+<li><a href="#love">bring back lost lover</a></li>
+<li><a href="#love">love spells</a></li>
+<li><a href="#love">money spells</a></li>
+<li><a href="#love">marriage spells</a></li>
+<li><a href="#love">protection spells</a></li>
+<li><a href="#psychic">psychic readings</a></li>
+<li><a href="#psychic">spiritual healing</a></li>
+<li><a href="#contact">remove bad luck</a></li>
+<li><a href="#contact">business success</a></li>
+<li><a href="#contact">lottery luck</a></li>
 </ul>
 
 </div>
 
 <div class="content">
 
+<div id="about"></div>
+
 <h2>best traditional healer and sangoma</h2>
 
 <p>
-Mama Daina is a trusted traditional healer and sangoma offering powerful spiritual healing, cleansing, protection and relationship solutions. With years of spiritual experience, Mama Daina helps people from around the world restore lost love, attract financial blessings, remove bad luck and overcome life challenges.
+Mama Daina is a trusted sangoma and traditional healer offering spiritual guidance, cleansing, protection, love healing, financial blessings, relationship restoration and powerful traditional healing services. With years of spiritual experience, Mama Daina helps people from around the world overcome life challenges, remove bad luck, attract success, restore lost love and achieve peace and happiness.
 </p>
 
 <p>
 All consultations are handled privately through WhatsApp and online communication. Services are available worldwide including the United States, Canada, United Kingdom, South Africa, Australia and many other countries.
 </p>
+
+<div id="love"></div>
+
+<h2>love spells and spiritual solutions</h2>
 
 <div class="services">
 
@@ -299,7 +342,44 @@ All consultations are handled privately through WhatsApp and online communicatio
 
 </div>
 
-<div class="contact">
+<div id="psychic"></div>
+
+<h2 style="margin-top:60px;">psychic readings in usa</h2>
+
+<p>
+Get accurate psychic readings, relationship advice, spiritual guidance and powerful cleansing from Mama Daina. Consultations are available through WhatsApp worldwide.
+</p>
+
+<div id="blogs"></div>
+
+<h2 style="margin-top:60px;">blogs</h2>
+
+<div class="blogs">
+
+<div class="blog">
+<h3>how to bring back lost love</h3>
+<p>
+Learn spiritual methods and guidance used to restore relationships and attract positive love energy.
+</p>
+</div>
+
+<div class="blog">
+<h3>signs of spiritual attacks</h3>
+<p>
+Understand negative spiritual signs and how cleansing and protection can help restore peace.
+</p>
+</div>
+
+<div class="blog">
+<h3>powerful traditional healing solutions</h3>
+<p>
+Discover traditional healing methods used to remove bad luck and attract blessings and success.
+</p>
+</div>
+
+</div>
+
+<div class="contact" id="contact">
 
 <h2>contact mama daina</h2>
 
