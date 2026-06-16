@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mama Daina | Lost Love Spells Caster</title>
+<title>Traditional Spiritual Guidance & Consultation | South Africa</title>
 
-<meta name="description" content="Mama Daina is a trusted sangoma and traditional healer offering love spells, spiritual healing, psychic readings, protection spells, cleansing and relationship restoration worldwide.">
+<meta name="description" content="Professional spiritual consultations, relationship guidance, family advice, and traditional spiritual support. Confidential consultations available via phone and WhatsApp.">
 
-<meta name="keywords" content="traditional healer, sangoma, love spells, lost love spells caster, psychic readings, spiritual healer, bring back lost lover, protection spells, spiritual cleansing, money spells">
+<meta name="keywords" content="traditional spiritual guidance, spiritual consultation, relationship guidance, traditional healer consultation, spiritual advisor, family guidance, spiritual support South Africa">
 
-<meta name="author" content="Mama Daina">
-
-<meta name="robots" content="index, follow">
-
-<meta property="og:title" content="Mama Daina Traditional Healer">
-
-<meta property="og:description" content="Trusted sangoma and traditional healer helping people worldwide.">
-
-<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -27,258 +18,177 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-background:black;
-color:white;
-font-family:Arial,sans-serif;
+background:#f8f8f8;
+color:#333;
+line-height:1.7;
 }
 
-.navbar{
-background:black;
-padding:15px 30px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-border-bottom:1px solid #333;
+header{
+background:#0f5132;
+padding:15px 5%;
 position:sticky;
 top:0;
-z-index:1000;
+z-index:999;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
 .logo{
-color:red;
-font-size:30px;
-font-weight:bold;
-text-transform:capitalize;
+color:#fff;
+font-size:24px;
+font-weight:700;
 }
 
-.menu{
+nav ul{
 display:flex;
-gap:30px;
-flex-wrap:wrap;
+list-style:none;
+gap:20px;
 }
 
-.menu a{
-color:#ffcc66;
+nav ul li a{
+color:white;
 text-decoration:none;
-font-size:22px;
-text-transform:capitalize;
-}
-
-.menu a:hover{
-color:red;
+font-weight:500;
 }
 
 .hero{
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+background-size:cover;
+background-position:center;
+color:white;
+padding:120px 5%;
 text-align:center;
-padding:100px 20px;
-background:url('https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1600&auto=format&fit=crop') center/cover;
-position:relative;
-}
-
-.hero::before{
-content:'';
-position:absolute;
-inset:0;
-background:rgba(0,0,0,0.75);
-}
-
-.hero-content{
-position:relative;
-z-index:2;
 }
 
 .hero h1{
-font-size:65px;
-color:red;
+font-size:48px;
 margin-bottom:20px;
-text-transform:uppercase;
 }
 
 .hero p{
-font-size:28px;
-color:#ddd;
+font-size:20px;
+max-width:800px;
+margin:auto;
 }
 
-.main{
-display:grid;
-grid-template-columns:300px 1fr;
-gap:40px;
-padding:40px;
-}
-
-.sidebar{
-background:#111;
-padding:25px;
-border:1px solid #444;
-height:fit-content;
-}
-
-.sidebar h2{
-color:red;
-font-size:40px;
-margin-bottom:20px;
-text-transform:uppercase;
-}
-
-.sidebar ul{
-list-style:none;
-}
-
-.sidebar ul li{
-margin-bottom:15px;
-}
-
-.sidebar ul li a{
-color:white;
+.btn{
+display:inline-block;
+margin-top:25px;
+background:#ffc107;
+color:#000;
+padding:15px 30px;
+border-radius:8px;
 text-decoration:none;
-font-size:22px;
-text-transform:capitalize;
+font-weight:600;
 }
 
-.sidebar ul li a:hover{
-color:red;
+section{
+padding:70px 8%;
 }
 
-.content{
-background:#050505;
-padding:40px;
-border:1px solid #444;
+.section-title{
+text-align:center;
+font-size:36px;
+margin-bottom:40px;
+color:#0f5132;
 }
 
-.content h2{
-color:red;
-font-size:45px;
-margin-bottom:20px;
-text-transform:uppercase;
-}
-
-.content p{
-font-size:22px;
-line-height:1.8;
-margin-bottom:25px;
-color:#ddd;
+.about{
+background:white;
 }
 
 .services{
+background:#eef5f0;
+}
+
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
-margin-top:30px;
 }
 
 .card{
-background:#111;
+background:white;
 padding:25px;
-border:1px solid red;
-}
-
-.card img{
-width:100%;
-height:200px;
-object-fit:cover;
-margin-bottom:15px;
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
 }
 
 .card h3{
-color:#ffcc66;
-font-size:30px;
-margin-bottom:15px;
-text-transform:capitalize;
+color:#0f5132;
+margin-bottom:10px;
 }
 
-.card p{
-font-size:19px;
+.why ul{
+max-width:800px;
+margin:auto;
 }
 
-.blogs{
-margin-top:40px;
-}
-
-.blog{
-background:#111;
-padding:25px;
-margin-bottom:25px;
-border:1px solid #444;
-}
-
-.blog h3{
-color:#ffcc66;
-font-size:30px;
+.why li{
 margin-bottom:15px;
 }
 
-.blog p{
-font-size:20px;
-color:#ddd;
+.testimonials{
+background:white;
+}
+
+.testimonial{
+background:#f3f3f3;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
 }
 
 .contact{
-margin-top:50px;
-background:#111;
-padding:40px;
+background:#0f5132;
+color:white;
 text-align:center;
-border:1px solid red;
 }
 
 .contact h2{
-color:red;
-font-size:50px;
 margin-bottom:20px;
-text-transform:uppercase;
 }
 
-.contact p{
-font-size:25px;
-}
-
-.whatsapp{
-position:fixed;
-left:20px;
-bottom:20px;
-background:#25D366;
-color:white;
-padding:18px 25px;
-border-radius:50px;
+.contact a{
+color:#ffc107;
 text-decoration:none;
-font-size:22px;
 font-weight:bold;
-z-index:1000;
 }
 
 footer{
-background:black;
+background:#083820;
+color:white;
 text-align:center;
-padding:30px;
-margin-top:40px;
-border-top:1px solid #333;
-color:#999;
-font-size:20px;
+padding:20px;
 }
 
-@media(max-width:900px){
-
-.main{
-grid-template-columns:1fr;
-}
-
-.menu{
-gap:15px;
-}
+@media(max-width:768px){
 
 .hero h1{
-font-size:40px;
+font-size:32px;
 }
 
-.sidebar h2{
-font-size:30px;
+.hero p{
+font-size:18px;
 }
 
-.content h2{
-font-size:35px;
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
 }
 
 }
@@ -288,163 +198,152 @@ font-size:35px;
 
 <body>
 
-<div class="navbar">
+<header>
 
-<div class="logo">
-mama daina
-</div>
+<nav>
 
-<div class="menu">
-<a href="#home">home</a>
-<a href="#about">about</a>
-<a href="#love">love spells</a>
-<a href="#psychic">psychic readings</a>
-<a href="#blogs">blogs</a>
-<a href="#contact">contact</a>
-</div>
-
-</div>
-
-<div class="hero" id="home">
-
-<div class="hero-content">
-
-<h1>lost love spells caster in usa</h1>
-
-<p>
-trusted sangoma and traditional healer helping people worldwide
-</p>
-
-</div>
-
-</div>
-
-<div class="main">
-
-<div class="sidebar">
-
-<h2>spells</h2>
+<div class="logo">Mondise Spiritual Guidance</div>
 
 <ul>
-<li><a href="#love">bring back lost lover</a></li>
-<li><a href="#love">love spells</a></li>
-<li><a href="#love">money spells</a></li>
-<li><a href="#love">marriage spells</a></li>
-<li><a href="#love">protection spells</a></li>
-<li><a href="#psychic">psychic readings</a></li>
-<li><a href="#psychic">spiritual healing</a></li>
-<li><a href="#contact">remove bad luck</a></li>
-<li><a href="#contact">business success</a></li>
-<li><a href="#contact">lottery luck</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#why">Why Us</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
 
-</div>
+</nav>
 
-<div class="content">
+</header>
 
-<div id="about"></div>
+<section class="hero">
 
-<h2>best traditional healer and sangoma</h2>
-
-<p>
-Mama Daina is a trusted sangoma and traditional healer offering spiritual guidance, cleansing, protection, love healing, financial blessings, relationship restoration and powerful traditional healing services. With years of spiritual experience, Mama Daina helps people from around the world overcome life challenges, remove bad luck, attract success, restore lost love and achieve peace and happiness.
-</p>
+<h1>Traditional Spiritual Guidance & Consultation</h1>
 
 <p>
-All consultations are handled privately through WhatsApp and online communication. Services are available worldwide including the United States, Canada, United Kingdom, South Africa, Australia, Nigeria, Kenya and many other countries.
+Confidential consultations for relationship concerns, family matters,
+personal growth, and spiritual guidance.
+Available by phone and WhatsApp.
 </p>
 
-<div id="love"></div>
-
-<h2>love spells and spiritual solutions</h2>
-
-<div class="services">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?q=80&w=1200&auto=format&fit=crop" alt="love spells">
-<h3>love spells</h3>
-<p>bring back your ex lover and restore relationships quickly.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="money spells">
-<h3>money spells</h3>
-<p>remove financial blockages and attract success.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop" alt="spiritual healing">
-<h3>spiritual healing</h3>
-<p>cleanse negative energy and restore peace.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?q=80&w=1200&auto=format&fit=crop" alt="protection spells">
-<h3>protection spells</h3>
-<p>protect yourself and your family from evil energy.</p>
-</div>
-
-</div>
-
-<div id="psychic"></div>
-
-<h2 style="margin-top:60px;">psychic readings in usa</h2>
-
-<p>
-Get accurate psychic readings, relationship advice, spiritual guidance and powerful cleansing from Mama Daina. Consultations are available through WhatsApp worldwide.
-</p>
-
-<div id="blogs"></div>
-
-<h2 style="margin-top:60px;">blogs</h2>
-
-<div class="blogs">
-
-<div class="blog">
-<h3>how to bring back lost love</h3>
-<p>
-Learn spiritual methods and guidance used to restore relationships and attract positive love energy.
-</p>
-</div>
-
-<div class="blog">
-<h3>signs of spiritual attacks</h3>
-<p>
-Understand negative spiritual signs and how cleansing and protection can help restore peace.
-</p>
-</div>
-
-<div class="blog">
-<h3>powerful traditional healing solutions</h3>
-<p>
-Discover traditional healing methods used to remove bad luck and attract blessings and success.
-</p>
-</div>
-
-</div>
-
-<div class="contact" id="contact">
-
-<h2>contact mama daina</h2>
-
-<p>whatsapp: +27 79 786 2372</p>
-
-<p>
-available worldwide 24/7
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<a href="https://wa.me/27797862372" class="whatsapp">
-whatsapp
+<a href="https://wa.me/27676629600" class="btn">
+Book a Consultation
 </a>
 
+</section>
+
+<section id="about" class="about">
+
+<h2 class="section-title">About Us</h2>
+
+<p style="max-width:900px;margin:auto;text-align:center;">
+We provide traditional spiritual consultations rooted in cultural practices
+and personal guidance. Our consultations are intended to help clients gain
+clarity, understanding, and support regarding personal, family, and
+relationship concerns.
+</p>
+
+</section>
+
+<section id="services" class="services">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Relationship Guidance</h3>
+<p>
+Consultations focused on relationship concerns,
+communication challenges, and personal understanding.
+</p>
+</div>
+
+<div class="card">
+<h3>Family Consultations</h3>
+<p>
+Guidance regarding family matters,
+conflict resolution, and personal concerns.
+</p>
+</div>
+
+<div class="card">
+<h3>Spiritual Guidance</h3>
+<p>
+Private consultations for spiritual questions,
+personal reflection, and life direction.
+</p>
+</div>
+
+<div class="card">
+<h3>Career & Business Guidance</h3>
+<p>
+Consultations for individuals seeking clarity
+on career and business decisions.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="why" class="why">
+
+<h2 class="section-title">Why Clients Contact Us</h2>
+
+<ul>
+<li>✓ Confidential consultations</li>
+<li>✓ Respectful and professional service</li>
+<li>✓ Traditional spiritual guidance</li>
+<li>✓ Phone and WhatsApp consultations available</li>
+<li>✓ Local and international clients welcome</li>
+<li>✓ Appointment-based service</li>
+</ul>
+
+</section>
+
+<section class="testimonials">
+
+<h2 class="section-title">Client Feedback</h2>
+
+<div class="testimonial">
+"Thank you for your guidance and support during a difficult period."
+</div>
+
+<div class="testimonial">
+"The consultation helped me gain clarity regarding my situation."
+</div>
+
+<div class="testimonial">
+"I appreciated the professional and respectful approach."
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<p>Phone / WhatsApp:</p>
+
+<h3>+27 67 662 9600</h3>
+
+<p style="margin-top:20px;">
+<a href="https://wa.me/27676629600">Chat on WhatsApp</a>
+</p>
+
+</section>
+
 <footer>
-© 2026 mama daina traditional healer. all rights reserved.
+
+<p>
+© 2026 Mondise Spiritual Guidance. All Rights Reserved.
+</p>
+
+<p style="margin-top:10px;font-size:13px;">
+Disclaimer: Consultations are provided for guidance purposes only.
+Results may vary and no specific outcomes are guaranteed.
+</p>
+
 </footer>
 
 </body>
